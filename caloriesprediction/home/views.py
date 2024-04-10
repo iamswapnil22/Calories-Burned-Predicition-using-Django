@@ -8,4 +8,16 @@ def about(request):
 def contact(request):
     return render(request,'contact.html')
 def prediction(request):
-    return render(request,'prediction.html')
+    if request.method == "POST":
+        height = float(request.POST.get('height'))
+        age = float(request.POST.get('age'))
+        weight= float(request.POST.get('weight'))
+        duration= float(request.POST.get('duration'))
+        heart_Rate = float(request.POST.get('heart_Rate'))
+        temprature = int(request.POST.get('temprature'))
+        gender = int(request.POST.get('gender'))
+
+        print(request.POST)
+        print(age,height)
+    else:
+        return render(request,'prediction.html')
