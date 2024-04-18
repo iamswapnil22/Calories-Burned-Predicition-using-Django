@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "caloriesprediction/caloriesprediction/wsgi.py",
+        "src": "caloriesprediction/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "150mb",
@@ -13,7 +13,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "vercel_app/wsgi.py"
+        "dest": "caloriesprediction/wsgi.py"
       }
     ]
   }
