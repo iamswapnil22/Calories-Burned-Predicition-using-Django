@@ -15,3 +15,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'caloriesprediction.settings')
 
 application = get_wsgi_application()
 app = application
+print(application)
