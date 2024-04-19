@@ -13,7 +13,7 @@
             ],
             "django": true,
             "autoStartBrowser": false,
-            "program": "${workspaceFolder}\\caloriesprediction\\manage.py"
+            "program": "${workspaceFolder}\\manage.py"
         }
     ]
 }
